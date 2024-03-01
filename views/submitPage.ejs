@@ -1,0 +1,51 @@
+<main>
+    
+    <article>
+        <p class="title-medium title-submit">Share your amazing recipes with thousands of web developers accross the world.Fill our form to get started</p>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+           
+           
+            <div class="email">
+                <label for="Email" class="label-email">URI</label>
+                <input type="text" class="ip-email" name="uri" value="">
+            </div>
+            <div class="name">
+                <label for="name" class="label-name">Recipe Name</label>
+                <input type="text" class="ip-name" name="recipe_name" value="">
+            </div>
+            <div class="time">
+                <label for="" class="totaltime">Time</label>
+                <input type="number" name="time">
+            </div>
+
+            <div class="ingredients">
+                <label for="ingr" class="lable-ingr">Ingredients</label>
+                <p>Example:Sugar</p>
+                <div class="input-ingr">
+                    <input type="text" name="ingr1">
+                </div>
+                
+                <button class="btn-ingr" type="button">+Ingredients</button>
+            </div>
+            <div class="category">
+                <label>Select Category</label>
+                <select id="category" name="category">
+                    <option value="asian">Asian</option>
+                    <option value="french">French</option>
+                </section>
+
+            </div>
+
+            <div class="category">
+                <label>Upload Image</label>
+                <input type="file" name="image">
+            </div>
+            <input type="submit" name="submit" value="submit">
+           
+            
+
+
+        </form>
+      
+    </article>
+</main>

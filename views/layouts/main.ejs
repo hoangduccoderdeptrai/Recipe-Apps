@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" theme="light" class="theme_mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- primary meta tags -->
+    <title><%=title%></title>
+    <meta name="title" content="Cook.io|Cooking made easy">
+    <meta name="description" content="This is a Recipe application made by duclehoangcoder">
+    <link rel="stylesheet" href=<%=`${css}`%>>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/edamam.svg" type="image/xml+svg">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;900&display=swap" rel="stylesheet">
+    <!-- font Awesome -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body >
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="/images/logo-light.svg" width="156" height="32" class="logo-light" alt="Cook.io">
+            <img src="/images/logo-dark.svg" width="156" height="32" class="logo-dark" alt="Cook.io">
+
+        </a> 
+        
+        <nav class="navbar">
+            <ul class="navlist-list">
+                <li>
+                    <a href="/" class="navbar-link title-small has-state ">Home</a>
+                </li>
+                <li>
+                    <a href="/recipes" class="navbar-link title-small has-state">Recipes</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- button -->
+        <button class="icon-btn theme-switch has-state" aria-pressed="false" 
+        aria-label="Toggle light and dark theme" data-theme-btn>
+            <span class="material-symbols-outlined light-icon ">
+        
+                <i class='bx bx-sun' ></i>
+            </span>
+            <span class="material-symbols-outlined dark-icon" id="icon_mode">
+                <i class='bx bxs-moon' ></i>
+            </span>
+           
+        </button>
+
+
+        <a href="/saved-recipes" class="btn btn-primary">
+            <!-- <span class="material-symbols-outlined" aria-hidden="true">book</span> -->
+            <span class="material-symbols-outlined span-book-icon">
+                <i class='bx bx-book-bookmark material-symbols-outlined' ></i>
+            </span>
+            <span class="span">Saved Recipes</span>
+
+        </a>
+    </header>
+   
+    
+    <!-- MOBILE NAV -->
+   
+    <nav class="mobile-nav" aria-label="primary">
+        <ul class="nav-list">
+            <li class="nav-item" >
+                <a href="./recipes" class="nav-link">
+                    <i class='bx bxs-coin-stack '></i>
+                    <span class="label-medium">Recipes</span>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a href="./home" class="nav-link" aria-current="true">
+                    <i class='bx bxs-home' ></i>
+                    <span class="label-medium">Homes</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./saved-recipes" class="nav-link">
+                    <i class='bx bxs-save' ></i>
+                    <span class="label-medium">Saves</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- MAIN  -->
+    <!-- index.ejs -->
+    <%-body-%> 
+
+    <!-- Notification -->
+    <div class="info">
+        <!-- <div class="notification">
+            <p>Add to Recipe book</p>
+        </div> -->
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            
+            <a href="/" class="logo">
+                <img src="/images/logo-light.svg" width="156" height="32" class="logo-light" alt="Cook.io">
+                <img src="/images/logo-dark.svg" width="156" height="32" class="logo-dark" alt="Cook.io">
+            </a>
+            <p class="copyright label-medium">Copyright 2024 by duclehoangcoder</p>
+        </div>
+        
+       
+        <div class="social-media">
+
+            <span class="facebook material-symbols-outlined">
+                <a href="https://www.facebook.com/profile.php?id=100009073789055">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+                
+            </span>
+            <span class="instagram material-symbols-outlined">
+                <i class='bx bxl-instagram-alt'></i>
+            </span>
+            <span class="twitter material-symbols-outlined">
+                <i class='bx bxl-twitter'></i>
+            </span>
+
+
+
+        </div>
+
+    </footer>
+    <!-- <div class="info"> -->
+        <!-- <div class="notification">
+            <p>Add to Recipe book</p>
+        </div> -->
+    <!-- </div> -->
+   
+    
+</body>
+<!-- dont using public/theme.js because app.use(express.static(`public`)) linked to public -->
+<script src="/theme.js" type="module"></script>
+<script src=<%=`${js}`%> type="module"></script>
+</html>

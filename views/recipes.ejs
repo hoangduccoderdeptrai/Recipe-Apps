@@ -1,0 +1,239 @@
+<main>
+    <article class="article recipe-page" style="height: 400px;">
+        <div class="filter-bar" data-filter-bar>
+            <!-- Title -->
+            <div class="title-wrapper">
+                <span class="material-symbols-outlined"
+                aria-hidden="true">
+                    <i class='bx bx-filter'></i>
+                </span>
+                <p class="title-medium">Search</p>
+                <button class="close-btn has-state" aria-label="Close filter bar" data-filter-toggler>
+                    <span class="material-symbols-outlined" aria-hidden="true">
+                        <i class='bx bx-x'></i>
+                    </span>
+                </button>
+            </div>
+            <!-- Content -->
+            <div class="filter-content">
+                <div class="search-wrapper">
+                    <div class="input-outlined">
+                        <label for="search" class="body-large label">Search</label>
+                        <input type="search" placeholder="Type something" class="body-medium input-recipes" name="search">
+
+                    </div>
+                </div>
+                <!-- Filter container for cooking time -->
+                <div class="accordion-container" data-accordion>
+                    <button class="accordion-btn has-state"  aria-controls="cook-time" aria-expanded="false" data-accordion-btn >
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            <i class='bx bx-timer'></i>
+                        </span>
+                        <p class="label-large">Cooking Time</p>
+                        <span class="material-symbols-outlined trailing-icon" aria-hidden="true"  >
+                            <i class='bx bxs-chevron-down'></i>
+                        </span>
+                    </button>
+                    <!-- dropList for cooking time -->
+                    <div class="accordion-content" id="cook-time">
+                        <div class="accordion-overflow" data-filter="time">
+                            <label class="filter-chip lable-large">
+                                &lt;5 minutes
+                                <input type="radio" name="cook-time" value="5" aria-label="5 or less minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                5 - 10 minutes
+                                <input type="radio" name="cook-time" value="5-10" aria-label="5 to 10 minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                10 - 20 minutes
+                                <input type="radio" name="cook-time" value="10-20" aria-label="10 - 20 minutes"  class="checkbox">
+                            </label>
+
+                            <label class="filter-chip lable-large">
+                                20 - 30 minutes
+                                <input type="radio" name="cook-time" value="20-30" aria-label="20 - 30 minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                30 - 40 minutes
+                                <input type="radio" name="cook-time" value="30-40" aria-label="30 - 40 minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                40 - 50 minutes
+                                <input type="radio" name="cook-time" value="40-50" aria-label="40 - 50 minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                50 - 60 minutes
+                                <input type="radio" name="cook-time" value="50-60" aria-label="50 - 60 minutes"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                &gt; 1 hours
+                                <input type="radio" name="cook-time" value="60+" aria-label="1 or more hours"  class="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter container for ingredients -->
+                <div class="accordion-container" data-accordion>
+                    <button class="accordion-btn has-state" aria-controls="cook-time" aria-expanded="false" data-accordion-btn>
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            <i class='bx bx-timer'></i>
+                            
+                        </span>
+                        <p class="label-large">Ingredients</p>
+                        <span class="material-symbols-outlined trailing-icon" aria-hidden="true" ">
+                            <i class='bx bxs-chevron-down'></i>
+                        </span>
+                    </button>
+                    <!-- dropList for ingredients -->
+                    <div class="accordion-content" id="ingredients">
+                        <div class="accordion-overflow" data-filter="ingr">
+                            <label class="filter-chip lable-large">
+                                &lt;5 ingredients
+                                <input type="radio" name="ingredients" value="5" aria-label="5 or less ingredients"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                5 - 10 ingredients
+                                <input type="radio" name="ingredients" value="5-10" aria-label="5 to 10 ingredients"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                10 - 20 ingredients
+                                <input type="radio" name="ingredients" value="10-20" aria-label="10 - 20 ingredients"  class="checkbox">
+                            </label>
+
+                            <label class="filter-chip lable-large">
+                                20 - 30 ingredients
+                                <input type="radio" name="ingredients" value="20-30" aria-label="20 - 30 ingredients"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                &gt; 30 ingredients
+                                <input type="radio" name="ingredients" value="30+" aria-label="30 or more ingredients"  class="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter container for colories -->
+                <div class="accordion-container" data-accordion>
+                    <button class="accordion-btn has-state" aria-controls="colories" aria-expanded="false" data-accordion-btn>
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            <i class='bx bxs-chevrons-down'></i>
+                        </span>
+                        <p class="label-large">Colories</p>
+                        <span class="material-symbols-outlined trailing-icon" aria-hidden="true">
+                            <i class='bx bxs-chevron-down'></i>
+                        </span>
+                    </button>
+                    <!-- dropList for cooking time -->
+                    <div class="accordion-content" id="colories">
+                        <div class="accordion-overflow" data-filter="colories">
+                            <label class="filter-chip lable-large">
+                                &lt;50 colories
+                                <input type="radio" name="colories" value="50" aria-label="50 or less colories"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                50 - 100 colories
+                                <input type="radio" name="colories" value="50-100" aria-label="50 to 100 colories"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                200 - 300 colories
+                                <input type="radio" name="colories" value="200-300" aria-label="200 - 300 colories"  class="checkbox">
+                            </label>
+
+                            <label class="filter-chip lable-large">
+                                300 - 400 colories
+                                <input type="radio" name="colories" value="300-400" aria-label="300 - 400 colories"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                &gt; 500 colories
+                                <input type="radio" name="colories" value="500+" aria-label="500 or more colories"  class="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter container for heathy -->
+                <div class="accordion-container">
+                    <button class="accordion-btn has-state" aria-controls="health" aria-expanded="false" data-accordion-btn>
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            <i class='bx bx-health'></i>
+                        </span>
+                        <p class="label-large">Health</p>
+                        <span class="material-symbols-outlined trailing-icon" aria-hidden="true">
+                            <i class='bx bxs-chevron-down'></i>
+                        </span>
+                    </button>
+                    <!-- dropList for cooking healthy -->
+                    <div class="accordion-content" id="heathy">
+                        <div class="accordion-overflow" data-filter="healthy">
+                            <label class="filter-chip lable-large">
+                                Alcohol Free
+                                <input type="checkbox" name="Alcohol Free" aria-label="Alcohol Free"  class="checkbox" value="alcohol-free">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                Alcohol Cocktail
+                                <input type="checkbox" name="Alcohol Cocktail" aria-label="Alcohol Cocktail"  class="checkbox" value="alcohol-cocktail">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                Celery Free
+                                <input type="checkbox" name="Celery Free"aria-label="Celery Free"  class="checkbox" value="celery-free">
+                            </label>
+
+                            <label class="filter-chip lable-large">
+                                Crustcean Free
+                                <input type="checkbox" name="Crustcean Free" value="crustcean-free" aria-label="Crustcean Free"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                Dairy Free
+                                <input type="checkbox" name="Dairy Free" value="dairy-free" aria-label="Dairy Free"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                DASH
+                                <input type="checkbox" name="DASH" value="dash" aria-label="DASH"  class="checkbox">
+                            </label>
+                            <label class="filter-chip lable-large">
+                                Egg Free
+                                <input type="checkbox" name="Egg Free" value="egg-free" aria-label="Egg Free"  class="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- Action -->
+            <div class="filter-actions">
+                <button class="btn btn-secondary lable-large has-state" data-filter-clear>Clear</button>
+                <button class="btn btn-secondary lable-large " data-filter-submit data-filter-toggler>Apply</button>
+            </div>
+
+        </div>
+        <!-- RECIPES CONTAINER -->
+        <div class="recipe-container container">
+            <!-- TITILE-WRAPPER -->
+            <div class="title-wrapper">
+                <h2 class="headline-small">All Recipes</h2>
+                <button class="btn btn-secondary btn-filter has-icon has-state" 
+                aria-label="Open filter bar" data-filter-toggler data-filter-btn id="filter-btn">
+                    <span class="material-symbols-outlined"
+                    aria-hidden="true">
+                        <i class='bx bx-filter'></i>
+                    </span>
+                    <div class="wrapper">
+                        <span class="label-large">Filters</span>
+                        <div class="badge label-small" data-filter-count>4</div>
+                    </div>
+                </button>
+            </div>
+            <!-- GRID LIST -->
+            <div class="grid-list" data-grid-list></div>
+            <div class="load-more grid-list" data-load-more>
+                <p class="info-text">
+                    All health content on duclehoangcoder.com is provided for general information only,
+                    and should not be treated as a substitute for the medical advice of your own doctor or any other health care professional.
+                    If you have any concerns about your general health, you should contact your local health care provider.
+                </p>
+            </div>
+
+        </div>
+
+    </article>
+</main>
